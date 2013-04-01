@@ -2,8 +2,10 @@
 
 require 'gtk2'
 require 'login'
+require 'model'
 
 module Twee
+
 	class App
 		def run
 			@login = Login.new(
@@ -15,6 +17,7 @@ module Twee
 			Gtk.main
 		end
 	end
+
 end
 
 Twee::App.new.run
